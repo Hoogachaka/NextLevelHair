@@ -1,0 +1,278 @@
+body {
+    display: flexbox;
+    background-color: rgba(50, 50, 60, 0.50);
+    border: 5px solid black;
+    padding-top: 10pt;
+    margin: 0;
+}
+
+header {
+    background-image: url("/Images/tucker.jpg") ;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: 110% 110%;
+    background-position: center;
+    height: 333pt;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 3pt solid black;
+    box-shadow:
+        inset 0 0 0 2pt white,
+        inset 0 0 0 5pt black;
+}
+
+@font-face {
+    font-family: 'good_timesregular';
+    src: url('/Fonts/goodTimes.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.next {
+    font-size: 50pt;
+    font-family: good_timesregular;
+    padding-left: 40pt;
+    text-shadow: -2px 2px gray;
+}
+
+.level {
+    font-size: 60pt;
+    font-family: good_timesregular;
+    padding-left: 60pt;
+    text-shadow: -3px 3px grey;
+}
+
+.hair {
+    font-size: 75pt;
+    font-family: good_timesregular;
+    padding-left: 90pt;
+    text-shadow: -3.5px 4px grey;
+}
+
+.glow {
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
+nav {
+    text-align: center;
+    word-spacing: 100px;
+    border: 5pt outset grey;
+        /* box-shadow: inset 0 0 0 1.5pt white,
+                    inset 0 0 0 4pt black; */
+    width: 89.6%;
+    margin: 5pt 5% 0pt 5%;
+    background-color: rgba(50, 50, 60, 0.5);
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: whitesmoke;
+}
+
+.navButton {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 22.5pt;
+    background-color: black;
+    padding: 2pt 10pt 5pt 10pt;
+}
+
+.raise:hover,
+.raise:focus {
+    box-shadow: 20px 20px 20px 20px hotpink var(--hover);
+    transform: translateY(-5px);
+}
+
+.blurbs {
+    display: flex;
+    width: 90%;
+    height: 350pt;
+    margin-top: 5pt;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: space-between;
+}
+
+.blurb {
+    display: block;
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    border: 5px inset grey;
+    position: relative;
+    justify-content: end;
+    background-color: rgb(198, 198, 206)
+    
+}
+
+.blurbTitle {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', fantasy;
+    font-size: 45px;
+}
+
+.blurbSubtitle {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+}
+
+.blurbhair {
+   height: 200pt;
+   width: 200pt;
+   position: absolute;
+   bottom: 10pt;
+   right: 63pt;
+   border: 3px solid black;
+}
+
+.invert:hover,
+invert:focus {
+    border: 5px outset grey;
+}
+
+.invert:hover .blurbhair {
+    border: 5px solid black;
+}
+
+footer {
+    margin-top: 50pt;
+    width: 100%;
+    height: 60px;
+    display: inline-flex;
+    border: 3px inset grey;
+    background-color: rgba(50, 50, 60, 0.5);
+}
+
+li {
+    display: inline-block;
+}
+
+.footerLeft {
+    width: 50%;
+    height: 100%;
+    padding-top: 20px;
+    padding-left: 120px;
+}
+
+.footerRight {
+    display: flex;
+    width: 50%;
+   justify-content: right;
+   padding-right: 88px;
+}
+
+.ect {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 15pt;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: space-between;
+}
+
+.featuredHair {
+    border: 5px ridge rgb(255, 196, 0);
+    background-color: rgb(198, 198, 206);
+    width: 45%;
+    text-align: center;
+    position: relative;
+}
+
+.featuredHairLabel {
+    font-family: "Arial Black", sans-serif;
+    background-color: white;
+    border: 3px ridge grey;
+    padding: 1px 5px 1px 5px;
+    margin-left: 0px;
+    position: absolute;
+    left: 15px;
+    top: -10px;
+}
+
+@font-face {
+    font-family: ImperialForce;
+    src: url(/Fonts/ImperialForce.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+.featuredHairTitle {
+    font-family: ImperialForce, sans-serif;
+    font-size: 40px;
+    text-decoration: underline;
+    color: rgb(255, 174, 0);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.featuredHairInfo {
+    font-family: ImperialForce, sans-serif;
+    font-size: 27px;
+    margin: 10;
+    padding: 0;
+    color: rgb(255, 174, 0);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.featuredHairPic {
+    max-width: 84%;
+    max-height: 84%;
+    margin-bottom: 15px;
+    border: 9px ridge rgb(255, 196, 0);
+}
+
+.review {
+    border: 5px ridge grey;
+    background-color: rgb(198, 198, 206);
+    width: 45%;
+    position: relative;
+   }
+
+.reviewLabel {
+    font-family: "Arial Black", sans-serif;
+    background-color: white;
+    border: 3px ridge grey;
+    padding: 1px 5px 1px 5px;
+    margin-left: 0px;
+    position: absolute;
+    left: 15px;
+    top: -10px;
+}
+
+.reviewContent {
+    border: 5px ridge grey;
+    margin: 50px;
+    padding-bottom: 50px;
+    background-color: white;
+}
+
+.reviewName {
+    font-size: 40px;
+    margin-left: 40px;
+}
+
+.reviewText {
+    font-size: 28px;
+    text-indent: 50px;
+    margin: 5px 10% 50px 10%;
+}
+
+.starIcon {
+    max-width: 33%;
+    margin-left: 33%;
+}
