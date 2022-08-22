@@ -107,13 +107,12 @@ a:visited {
 }
 
 .blurb {
-    display: block;
+    display: flexbox;
     width: 30%;
     height: 100%;
     text-align: center;
     border: 5px inset grey;
-    position: relative;
-    justify-content: end;
+    position: inherit;
     background-color: rgb(198, 198, 206);
 }
 
@@ -121,6 +120,7 @@ a:visited {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', fantasy;
     font-size: 45px;
     color: black;
+    margin: 0 30px 0 30px;
 }
 
 .blurbSubtitle {
@@ -129,12 +129,11 @@ a:visited {
     color: black;
 }
 
+/* Could not figure out how to get the pictures to vertically align to the bottom of the blurb boxes. Tried various flex and position properties. */
+
 .blurbhair {
    height: 200pt;
    width: 200pt;
-   position: absolute;
-   bottom: 10pt;
-   right: 63pt;
    border: 3px solid black;
 }
 
