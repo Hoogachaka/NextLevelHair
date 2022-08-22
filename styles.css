@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-image: url("/Images/tucker.jpg") ;
+    background-image: url("Images/tucker.jpg") ;
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
     background-size: 110% 110%;
