@@ -1,6 +1,6 @@
 body {
     display: flexbox;
-    background-color: rgba(50, 50, 60, 0.50);
+    background-color: rgba(255, 195, 228, 0.219);
     border: 5px solid black;
     padding-top: 10pt;
     margin: 0;
@@ -70,8 +70,6 @@ nav {
     text-align: center;
     word-spacing: 100px;
     border: 5pt outset grey;
-        /* box-shadow: inset 0 0 0 1.5pt white,
-                    inset 0 0 0 4pt black; */
     width: 89.6%;
     margin: 5pt 5% 0pt 5%;
     background-color: rgba(50, 50, 60, 0.5);
@@ -116,18 +114,19 @@ a:visited {
     border: 5px inset grey;
     position: relative;
     justify-content: end;
-    background-color: rgb(198, 198, 206)
-    
+    background-color: rgb(198, 198, 206);
 }
 
 .blurbTitle {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', fantasy;
     font-size: 45px;
+    color: black;
 }
 
 .blurbSubtitle {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 30px;
+    color: black;
 }
 
 .blurbhair {
@@ -240,7 +239,7 @@ li {
     border: 5px ridge grey;
     background-color: rgb(198, 198, 206);
     width: 45%;
-    position: relative;
+    /* position: relative; */
    }
 
 .reviewLabel {
@@ -249,7 +248,7 @@ li {
     border: 3px ridge grey;
     padding: 1px 5px 1px 5px;
     margin-left: 0px;
-    position: absolute;
+    position: relative;
     left: 15px;
     top: -10px;
 }
